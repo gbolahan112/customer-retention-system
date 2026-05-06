@@ -48,6 +48,13 @@ st.sidebar.write(
 # -------------------------------
 st.subheader("📥 Customer Information")
 
+if st.button("Load Example"):
+    SeniorCitizen = 0
+    tenure = 2
+    MonthlyCharges = 90.0
+    TotalCharges = 180.0
+    st.success("Example data loaded!")
+
 SeniorCitizen = st.selectbox("Senior Citizen", [0, 1])
 tenure = st.slider("Tenure (months)", 0, 72, 12)
 MonthlyCharges = st.number_input("Monthly Charges", min_value=0.0, value=70.5)
@@ -92,7 +99,10 @@ if st.button("Predict Churn"):
         st.error("🚨 High Risk: Customer likely to churn")
     else:
         st.success("✅ Low Risk: Customer likely to stay")
-
+    # KPI
+        st.metric("Churn Probability", f"{probability:.2%}")
+    # Progress bar   
+        st.progress(min(max(probability, 0.0), 1.0))
     # -------------------------------
     # Business Recommendation
     # -------------------------------
@@ -119,6 +129,8 @@ if st.button("Predict Churn"):
         st.success("Low Risk ✅")
         st.write("💡 Customer is stable. Maintain current service quality.")
 
+    # Explanation
+st.caption("Prediction is based on customer behavior patterns learned from historical data.")
 # -------------------------------
 # Footer
 # -------------------------------
