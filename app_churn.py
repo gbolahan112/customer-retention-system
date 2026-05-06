@@ -58,7 +58,9 @@ if st.button("Load Example"):
 SeniorCitizen = st.selectbox("Senior Citizen", [0, 1])
 tenure = st.slider("Tenure (months)", 0, 72, 12)
 MonthlyCharges = st.number_input("Monthly Charges", min_value=0.0, value=70.5)
-TotalCharges = st.number_input("Total Charges", min_value=0.0, value=800.0)
+TotalCharges = MonthlyCharges * tenure
+
+st.write(f"💰 Estimated Total Charges: ₦{TotalCharges:,.2f}")
 
 # 🔥 NEW FEATURES (VERY IMPORTANT)
 Contract = st.selectbox("Contract Type", ["Month-to-month", "One year", "Two year"])
