@@ -1,6 +1,9 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
 import streamlit as st
 from src.predict import load_model, make_prediction
-
+from src.features import preprocess_data
 # --------------------------------
 # Page Config
 # --------------------------------
@@ -19,6 +22,11 @@ def load():
 
 
 model, columns = load()
+
+df = pd.read_csv("data/lagos_rent.csv")
+
+# Preprocess dataset
+df = preprocess_data(df)
 
 # --------------------------------
 # Header
@@ -179,6 +187,75 @@ if st.button("Predict Rent"):
     st.caption(
         "Prediction generated using Random Forest Machine Learning model trained on Lagos rental data."
     )
+
+
+# --------------------------------
+# Analytics Dashboard
+# --------------------------------
+st.markdown("---")
+
+st.header("📊 Lagos Rental Market Analytics")
+
+# --------------------------------
+# Average Rent by Neighborhood
+# --------------------------------
+st.subheader("🏘 Average Rent by Neighborhood")
+
+avg_rent = (
+    df.groupby("Neighboorhood")["Price"]
+    .mean()
+    .sort_values(ascending=False)
+    .head(10)
+)
+
+fig1, ax1 = plt.subplots(figsize=(10, 5))
+
+avg_rent.plot(kind="bar", ax=ax1)
+
+ax1.set_ylabel("Average Rent Price")
+ax1.set_xlabel("Neighborhood")
+
+st.pyplot(fig1)
+
+# --------------------------------
+# Most Common Property Types
+# --------------------------------
+st.subheader("🏠 Most Common Property Types")
+
+property_counts = (
+    df["Property_Type"]
+    .value_counts()
+    .head(10)
+)
+
+fig2, ax2 = plt.subplots(figsize=(10, 5))
+
+property_counts.plot(kind="bar", ax=ax2)
+
+ax2.set_ylabel("Count")
+ax2.set_xlabel("Property Type")
+
+st.pyplot(fig2)
+
+# --------------------------------
+# Bedroom Distribution
+# --------------------------------
+st.subheader("🛏 Bedroom Distribution")
+
+bedroom_counts = (
+    df["Bedrooms"]
+    .value_counts()
+    .sort_index()
+)
+
+fig3, ax3 = plt.subplots(figsize=(10, 5))
+
+bedroom_counts.plot(kind="bar", ax=ax3)
+
+ax3.set_ylabel("Number of Properties")
+ax3.set_xlabel("Bedrooms")
+
+st.pyplot(fig3)
 
 # --------------------------------
 # Footer
