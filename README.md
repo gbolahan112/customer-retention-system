@@ -1,100 +1,105 @@
-<<<<<<< HEAD
-#  Customer Retention System (Churn Prediction)
+# 📊 Customer Retention System
 
-This project is a machine learning system that predicts whether a customer is likely to churn.
+An AI-powered customer churn prediction platform built using Machine Learning and Streamlit.
 
-## Live Demo
-[Use the App](https://customer-retention-system-keusbvvef7kifhgsweafw6.streamlit.app/)
+---
 
-##  Problem
-Customer churn is a major issue for telecom and financial companies. Losing customers reduces revenue and increases acquisition costs.
+# 🚀 Project Overview
 
-##  Solution
-This system predicts churn probability and classifies customers into:
-- High Risk 🚨
-- Medium Risk ⚠️
-- Low Risk ✅
+Customer churn is one of the biggest challenges faced by subscription-based and telecom businesses.
 
-##  Model
-- Logistic Regression (with class balancing)
-- Feature scaling using StandardScaler
-- Pipeline-based training
+This project predicts whether a customer is likely to leave a service using Machine Learning trained on historical customer behavior data.
 
-##  Features Used
-- SeniorCitizen
-- Tenure
-- MonthlyCharges
-- TotalCharges
+The system helps businesses:
 
-##  Tech Stack
-- Python
-- Scikit-learn
-- Streamlit
-- Joblib
+- Identify high-risk customers early
+- Improve customer retention strategies
+- Reduce revenue loss
+- Make data-driven business decisions
 
-##  Output
-- Churn prediction (0 or 1)
-- Probability score
-- Risk level classification
+---
 
-##  Use Case
-- Telecom companies (MTN, Airtel, Glo)
-- Banks and fintech platforms
-- Subscription-based businesses
+# 🎯 Business Problem
 
-##  Author
-Gbolahan
-=======
-# 🏠 Lagos Rent Intelligence System
+Telecom companies and subscription businesses lose significant revenue when customers stop using their services.
 
-An AI-powered Lagos real estate analytics and rent prediction platform built using Machine Learning and Streamlit.
+By predicting churn before it happens, businesses can:
 
+- Offer targeted incentives
+- Improve customer support
+- Increase customer satisfaction
+- Retain valuable customers
 
+This project demonstrates how Machine Learning can support real-world customer retention analytics.
 
-#  Project Overview
+---
 
-This project predicts Lagos rental prices using Machine Learning trained on real Lagos property listing data.
-
-The system analyzes:
--  Neighborhood
--  Bedrooms
--  Property Type
--  Luxury Features
--  Furnishing
--  Servicing
--  New Building Status
-
-to estimate annual rental prices across Lagos.
-
-
-
-#  Features
-
-✅ Lagos rent price prediction  
-✅ Interactive Streamlit dashboard  
-✅ Real estate analytics charts  
-✅ Average rent by neighborhood  
-✅ Property type distribution  
-✅ Bedroom distribution visualization  
-✅ Machine Learning pipeline  
-✅ Random Forest Regression model  
-
-
-
-#  Machine Learning Workflow
+# 🧠 Machine Learning Workflow
 
 The project workflow includes:
 
-1. Data Collection  
-2. Data Cleaning & Preprocessing  
-3. Feature Engineering  
-4. Exploratory Data Analysis (EDA)  
-5. Model Training  
-6. Model Evaluation  
-7. Streamlit Dashboard Development  
-8. Deployment on Streamlit Cloud  
+1. Data Collection
+2. Data Cleaning & Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Feature Engineering
+5. Model Training
+6. Model Evaluation
+7. Streamlit Dashboard Development
+8. Deployment on Streamlit Cloud
 
+---
 
+# 📊 Features
+
+✅ Customer churn prediction
+
+✅ Interactive Streamlit dashboard
+
+✅ Churn probability estimation
+
+✅ Business risk insights
+
+✅ Customer retention recommendations
+
+✅ Telecom-focused use case
+
+✅ Machine Learning pipeline
+
+✅ Real-time prediction interface
+
+---
+
+# 📥 Input Features
+
+The prediction system analyzes customer information such as:
+
+- Senior Citizen Status
+- Customer Tenure
+- Monthly Charges
+- Total Charges
+- Contract Type
+- Internet Service
+- Payment Method
+- Paperless Billing
+
+---
+
+# 📈 Prediction Output
+
+The application provides:
+
+- Churn prediction result
+- Churn probability score
+- Risk category
+- Business recommendations
+
+Example:
+
+- 🚨 High Risk Customer
+- ⚠️ Medium Risk Customer
+- ✅ Low Risk Customer
+
+---
 
 # 🛠 Tech Stack
 
@@ -103,57 +108,72 @@ The project workflow includes:
 - NumPy
 - Scikit-learn
 - Streamlit
-- Matplotlib
 - Joblib
 
+---
 
+# 🤖 Machine Learning Model
 
-#  Model Performance
+Model used:
 
-- Model: Random Forest Regressor
-- Mean Absolute Error: ~₦1.08M
-- R² Score: 0.25
+- Logistic Regression
 
+Pipeline includes:
 
+- StandardScaler
+- Logistic Regression Classifier
 
-# 🌍 Live App
+---
 
- [https://lagos-rent-intelligence-system-egrrcmku6upkczbvkb69yj.streamlit.app/)
+# 🌍 Live Application
 
+👉 Paste your Streamlit deployment link here
 
+---
 
-#  Dashboard Preview
+# 📸 Dashboard Preview
 
-## 🏠 Prediction Dashboard
+## 🖥 Prediction Dashboard
 
-<img width="1179" height="904" alt="Screenshot 2026-05-08 140957" src="https://github.com/user-attachments/assets/0591955d-e90b-44bc-ad99-b1c5a8b1fb4b" />
+(Add dashboard screenshot here)
 
+## 📊 Prediction Results
 
-## 📊 Analytics Dashboard
+(Add prediction screenshot here)
 
-<img width="1042" height="758" alt="Screenshot 2026-05-08 140833" src="https://github.com/user-attachments/assets/293a9ec2-b0c5-42ab-95bd-2092ae5ac369" />
-
-<img width="1096" height="790" alt="Screenshot 2026-05-08 140857" src="https://github.com/user-attachments/assets/03e9b0e0-7843-4e29-a8b9-c7390bd73792" />
-
-<img width="1000" height="557" alt="Screenshot 2026-05-08 140913" src="https://github.com/user-attachments/assets/a3dc9d8e-1da7-49ab-969d-ace4472e3ed1" />
-
-
-
+---
 
 # 📂 Project Structure
 
 ```bash
-lagos-rent-intelligence-system/
+customer-retention-system/
 │
-├── app.py
+├── app_churn.py
 ├── requirements.txt
 ├── README.md
 │
-├── data/
 ├── models/
 ├── src/
+├── data/
+
+🚀 Future Improvements
+Advanced feature engineering
+More customer behavior metrics
+Interactive analytics charts
+Deep learning integration
+Real-time API deployment
+Customer segmentation module
+
+
+💼 Business Impact
+
+This project demonstrates how Machine Learning can support:
+
+Customer retention strategies
+Telecom analytics
+Subscription business intelligence
+Predictive analytics solutions
 
 👨‍💻 Author
 
-Built by Gbolahan 
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+Built by Gbolahan 🚀
