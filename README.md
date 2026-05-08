@@ -105,3 +105,7 @@ lagos-rent-intelligence-system/
 ├── data/
 ├── models/
 ├── src/
+
+👨‍💻 Author
+
+Built by Gbolahan 
