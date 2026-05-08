@@ -71,7 +71,7 @@ The project workflow includes:
 
 # 🌍 Live App
 
-👉 [Launch Lagos Rent Intelligence System](PASTE_YOUR_STREAMLIT_LINK_HERE)
+ [https://lagos-rent-intelligence-system-egrrcmku6upkczbvkb69yj.streamlit.app/)
 
 
 
