@@ -17,9 +17,9 @@ def make_prediction(model, columns, input_dict):
 
 def load_model():
 
-    model = joblib.load("models/rent_model.pkl")
+    model = joblib.load("models/churn_model.pkl")
 
-    columns = joblib.load("models/rent_columns.pkl")
+    columns = joblib.load("models/churn_columns.pkl")
 
     return model, columns
 
