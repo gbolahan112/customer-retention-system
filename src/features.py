@@ -1,6 +1,5 @@
 import pandas as pd
 
-<<<<<<< HEAD
 def preprocess_data(df):
     print(df.columns)
     # Convert TotalCharges to numeric
@@ -26,7 +25,7 @@ def preprocess_data(df):
 
     # Convert bool to int
     df = df.astype(int)
-=======
+
 
 def preprocess_data(df):
 
@@ -100,6 +99,6 @@ def preprocess_data(df):
     df["New_Building"] = df["Property_name"].str.contains(
         "new", case=False, na=False
     ).astype(int)
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+
 
     return df

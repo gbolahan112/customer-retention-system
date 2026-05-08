@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 from sklearn.metrics import classification_report
 
 def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
     report = classification_report(y_test, y_pred)
     print(report)
-=======
+
 import pandas as pd
 
 
@@ -43,4 +43,4 @@ def analyze_data(df):
     property_types = df["Property_Type"].value_counts().head(10)
 
     print(property_types)
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+

@@ -1,24 +1,21 @@
 from sklearn.model_selection import train_test_split
-<<<<<<< HEAD
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-=======
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 import pandas as pd
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
 import joblib
 
 
 def train_model(df):
-<<<<<<< HEAD
+
     # Split features and target
     X = df.drop("Churn", axis=1)
     y = df["Churn"]
 
     # Train-test split
-=======
+
 
     # --------------------------------
     # Features
@@ -49,18 +46,18 @@ def train_model(df):
     # --------------------------------
     # Train-test split
     # --------------------------------
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
 
-<<<<<<< HEAD
+
     # Pipeline: scaling + model
     model = Pipeline([
         ("scaler", StandardScaler()),
         ("logreg", LogisticRegression(max_iter=2000, class_weight="balanced"))
     ])
-=======
+
     # --------------------------------
     # Random Forest Model
     # --------------------------------
@@ -69,12 +66,12 @@ def train_model(df):
         random_state=42,
         max_depth=20
     )
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+
 
     # Train model
     model.fit(X_train, y_train)
 
-<<<<<<< HEAD
+
     # ✅ Save model
     joblib.dump(model, "models/churn_model.pkl")
 
@@ -82,7 +79,7 @@ def train_model(df):
     joblib.dump(X.columns.tolist(), "models/churn_columns.pkl")
 
     return model, X_test, y_test
-=======
+
     # --------------------------------
     # Predictions
     # --------------------------------
@@ -108,4 +105,4 @@ def train_model(df):
     joblib.dump(X.columns.tolist(), "models/rent_columns.pkl")
 
     return model
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+

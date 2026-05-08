@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 venv/
 __pycache__/
 *.pyc
@@ -12,6 +12,6 @@ __pycache__/
 *.pyc
 
 # OS files
->>>>>>> a53356297f8ef74e1d22691e3d1f58a4f1734fcf
+
 .DS_Store
 Thumbs.db
