@@ -127,7 +127,7 @@ Pipeline includes:
 
 # 🌍 Live Application
 
-👉 Paste your Streamlit deployment link here
+https://customer-retention-system-keusbvvef7kifhgsweafw6.streamlit.app/
 
 ---
 
