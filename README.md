@@ -1,10 +1,10 @@
-# 📊 Customer Retention System
+#  Customer Retention System
 
 An AI-powered customer churn prediction platform built using Machine Learning and Streamlit.
 
 ---
 
-# 🚀 Project Overview
+#  Project Overview
 
 Customer churn is one of the biggest challenges faced by subscription-based and telecom businesses.
 
@@ -19,7 +19,7 @@ The system helps businesses:
 
 ---
 
-# 🎯 Business Problem
+#  Business Problem
 
 Telecom companies and subscription businesses lose significant revenue when customers stop using their services.
 
@@ -34,7 +34,7 @@ This project demonstrates how Machine Learning can support real-world customer r
 
 ---
 
-# 🧠 Machine Learning Workflow
+#  Machine Learning Workflow
 
 The project workflow includes:
 
@@ -49,7 +49,7 @@ The project workflow includes:
 
 ---
 
-# 📊 Features
+#  Features
 
 ✅ Customer churn prediction
 
@@ -69,7 +69,7 @@ The project workflow includes:
 
 ---
 
-# 📥 Input Features
+#  Input Features
 
 The prediction system analyzes customer information such as:
 
@@ -84,7 +84,7 @@ The prediction system analyzes customer information such as:
 
 ---
 
-# 📈 Prediction Output
+#  Prediction Output
 
 The application provides:
 
@@ -112,7 +112,7 @@ Example:
 
 ---
 
-# 🤖 Machine Learning Model
+#  Machine Learning Model
 
 Model used:
 
@@ -125,25 +125,28 @@ Pipeline includes:
 
 ---
 
-# 🌍 Live Application
+#  Live Application
 
 https://customer-retention-system-keusbvvef7kifhgsweafw6.streamlit.app/
 
 ---
 
-# 📸 Dashboard Preview
+#  Dashboard Preview
 
-## 🖥 Prediction Dashboard
+##  Prediction Dashboard
 
-(Add dashboard screenshot here)
+<img width="1298" height="1011" alt="Screenshot 2026-05-08 144527" src="https://github.com/user-attachments/assets/69cabaad-65ac-4524-b85e-54ae8f426c46" />
 
-## 📊 Prediction Results
 
-(Add prediction screenshot here)
+##  Prediction Results
+<img width="1294" height="886" alt="Screenshot 2026-05-08 144653" src="https://github.com/user-attachments/assets/3de3ad1f-03a5-4c8b-9343-4031653af7e7" />
+
+<img width="1094" height="602" alt="Screenshot 2026-05-08 144704" src="https://github.com/user-attachments/assets/d237df03-1782-4930-8d93-4df8e16de124" />
+
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```bash
 customer-retention-system/
@@ -156,7 +159,7 @@ customer-retention-system/
 ├── src/
 ├── data/
 
-🚀 Future Improvements
+ Future Improvements
 Advanced feature engineering
 More customer behavior metrics
 Interactive analytics charts
@@ -165,7 +168,7 @@ Real-time API deployment
 Customer segmentation module
 
 
-💼 Business Impact
+ Business Impact
 
 This project demonstrates how Machine Learning can support:
 
@@ -174,6 +177,6 @@ Telecom analytics
 Subscription business intelligence
 Predictive analytics solutions
 
-👨‍💻 Author
+ Author
 
-Built by Gbolahan 🚀
+Built by Gbolahan 
